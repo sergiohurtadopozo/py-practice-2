@@ -17,16 +17,17 @@ random_number = random.choice(numbers)
 print(f"Random number from the list: {random_number}")
 
 # 4. Choose a random number from 1 to 100 and print it out.
-random_number = 0 # fix this
+new_list=list(range(1,100))
+random_number = random.choice(new_list)
 print(f"Random number between 1 and 100: {random_number}")
 
 # 5. Sample 5 numbers uniques from numbers list and print them out.
-random_samples = [] # fix this
+random_samples = [] 
 print("Random samples:", random_samples)
 
 # 6. Create a list of days of the week in a variable days and print a random day of the week.
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-random_day = "" # fix this
+random_day = random.choice(days)
 print("Random day of the week:", random_day)
 
 
