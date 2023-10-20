@@ -2,15 +2,15 @@
 Exercices for input
 '''
 
-# 1. Ask the user for his/her name
-name = input("What is your name? ")
-
-# 2. Ask the user for his/her age
-
-# 3. Ask the user for his/her favorite_color
-
-# 4. Ask the user for his/her favorite_number
-
-# 5. Print out the information in a sentence
-
-# 6. Multiply the user's favorite number by 10 and print out the result
+name = input("What is your name: ")
+print(name)
+age = input("what is your age: ")
+print(age)
+favorite_color = input("what is your favorite color: ")
+print(favorite_color)
+number = input("What is your favorite number: ")
+print(number)
+print(f"My name is {name} and I am {age},my favorite number is {number}and my favorite color is {favorite_color}")
+operation = int(number)*10
+print(operation)
+ 
