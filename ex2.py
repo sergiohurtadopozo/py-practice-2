@@ -22,7 +22,7 @@ random_number = random.choice(new_list)
 print(f"Random number between 1 and 100: {random_number}")
 
 # 5. Sample 5 numbers uniques from numbers list and print them out.
-random_samples = [] 
+random_samples = random.sample(numbers,k=5) 
 print("Random samples:", random_samples)
 
 # 6. Create a list of days of the week in a variable days and print a random day of the week.
@@ -43,14 +43,14 @@ print("Coin flip:", coin)
 
 # 9. Ask the user for a number and print out a random number from 1 to the number the user chooses.
 # hint: use int(input("..."))
-user_number = 0 # fix this
-random_number = 0 # fix this, random number from 1 to user_number
+user_number = int(input("select a number: "))
+random_number = random.randint(1,user_number)
 print(f"Random number from 1 to {user_number}: {random_number}")
 
 
 # 10. Ask the user to guess a number from 1 to 10 and tell them whether they guessed correctly or not.
-user_guess = 0 # fix this, hint: use int(input("..."))
-random_number = 10 # fix this, random number from 1 to 10
+user_guess = int(input("Choose a number between 1 and 10: "))
+random_number = random.randint(1,10)
 if user_guess == random_number:
   print("You guessed correctly!")
 else:
